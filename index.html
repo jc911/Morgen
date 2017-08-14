@@ -7,7 +7,7 @@
 <meta content="black" name="apple-mobile-web-app-status-bar-style">
 <meta content="telephone=no" name="format-detection">
 <meta content="email=no" name="format-detection">
-<title>jQuery手机端弹出层提示对话框 - 站长素材</title>
+<title>耳朵探秘</title>
 <link rel="stylesheet" href="common.css">
 <script type="text/javascript" src="jquery-1.10.1.min.js"></script>
 <script type="text/javascript" src="alertPopShow.js"></script>
@@ -16,36 +16,94 @@
 <body>
 
 
-<div class="demo" id="demo1">toast</div>
-<div class="demo" id="demo2">alert</div>
-<div class="demo" id="demo3">confirm</div>
-<div class="demo" id="demo4">confirm+input</div>
+<!--<div class="demo" id="demo1">toast</div>-->
+<!--<div class="demo" id="demo2">alert</div>-->
+<!--<div class="demo" id="demo3">confirm</div>-->
+<!--<div class="demo" id="demo4">confirm+input</div>-->
 
-<div style="text-align:center;margin:50px 0; font:normal 14px/24px 'MicroSoft YaHei';">
-<p>适用浏览器：IE8、360、FireFox、Chrome、Safari、Opera、傲游、搜狗、世界之窗.</p>
-<p>来源：<a href="http://sc.chinaz.com/" target="_blank">站长素材</a></p>
-</div>
+<!--<div style="text-align:center;margin:50px 0; font:normal 14px/24px 'MicroSoft YaHei';">-->
+<!--<p>适用浏览器：IE8、360、FireFox、Chrome、Safari、Opera、傲游、搜狗、世界之窗.</p>-->
+<!--<p>来源：<a href="http://sc.chinaz.com/" target="_blank">站长素材</a></p>-->
+<!--</div>-->
 
 <div style="position: relative;">
-<img id="img1" usemap="#map" src="img/1.jpg" alt style="position:absolute; left:0px; top:0px; z-index:1;"/>
+	<img id="img1" usemap="#map" src="img/1.jpg" alt style="position:absolute; left:0px; top:0px; z-index:1;"/>
 
-<map name="map" id="map">
-	<area id="area_txg" shape="poly" coords="568,436,553,433,544,423,538,408,542,398,547,391,556,382,553,359,559,351,573,347,579,341,599,341,614,346,630,356,637,359,640,367,637,381,642,390,655,395,665,394,679,390,703,388,715,390,717,417,702,422,676,419,664,412,652,406,629,405,618,398,612,393,592,394,583,388,578,380,573,407,575,418">
-</map>
-<img id="tingxiaogu" src="img/tingxiaogu.png" style="position:absolute; left:519px; top:325px; z-index:2; display:none;"/>
+	<map name="map" id="map">
+		<area id="area_txg" shape="poly" coords="568,436,553,433,544,423,538,408,542,398,547,391,556,382,553,359,559,351,573,347,579,341,599,341,614,346,630,356,637,359,640,367,637,381,642,390,655,395,665,394,679,390,703,388,715,390,717,417,702,422,676,419,664,412,652,406,629,405,618,398,612,393,592,394,583,388,578,380,573,407,575,418">
+		<area id="area_gbgg" shape="poly" coords="705,378,682,367,672,346,677,334,699,328,716,330,725,333,736,313,752,300,767,296,779,304,784,315,803,310,822,312,836,323,838,329,776,352,764,368,745,383,740,396,729,397,729,384,728,376">
+		<area id="area_ew" shape="poly" coords="780,428,801,403,821,376,851,357,891,347,926,347,962,364,987,384,1007,424,1006,473,997,497,975,532,952,550,923,561,889,561,850,557,824,546,794,526,768,504,759,497,719,459,704,428,713,420,734,417,759,420">
+		<area id="area_gm" shape="poly" coords="566,438,573,455,573,471,567,479,558,479,543,467,532,447,530,428,533,418,536,415,548,428,556,433">
+		<area id="area_ed" shape="poly" coords="329,502,304,406,326,410,357,421,394,424,429,413,477,408,503,411,528,415,532,416,529,438,532,451,539,462,551,476,559,481,540,475,519,467,490,460,455,458,422,464,381,482,356,494">
+		<area id="area_ek" shape="poly" coords="301,411,315,499,320,544,309,587,306,640,284,671,250,677,221,674,198,658,179,611,168,542,156,477,129,435,100,399,81,362,82,301,90,274,121,240,150,221,198,211,232,216,275,239,299,272,316,312,322,349,311,372,296,376">
+		<area id="area_dn" shape="poly" coords="863,345,937,296,997,266,1020,262,985,249,971,213,973,188,987,177,1002,176,1025,123,1050,96,1071,110,1071,137,1074,142,1084,115,1123,102,1128,106,1104,114,1091,137,1111,136,1137,119,1146,137,1121,149,1135,164,1156,179,1179,151,1216,174,1210,220,1219,239,1194,257,1186,291,1157,270,1144,247,1124,255,1111,271,1087,273,1037,275,1009,294,983,323,970,364,969,369,925,349">
+	</map>
+
+	<img id="tingxiaogu" src="img/tingxiaogu.png" style="position:absolute; left:519px; top:325px; z-index:2; display:none;"/>
+	<img id="gubanguiguan" src="img/gubanguiguan.png" style="position:absolute; left:673px; top:296px; z-index:2; display:none;"/>
+	<img id="erwo" src="img/erwo.png" style="position:absolute; left:706px; top:345px; z-index:2; display:none;"/>
+	<img id="gumo" src="img/gumo.png" style="position:absolute; left:531px; top:414px; z-index:2; display:none;"/>
+	<img id="erdao" src="img/erdao.png" style="position:absolute; left:293px; top:408px; z-index:2; display:none;"/>
+	<img id="erkuo" src="img/erkuo.png" style="position:absolute; left:75px; top:207px; z-index:2; display:none;"/>
+	<img id="danao" src="img/danao.png" style="position:absolute; left:871px; top:95px; z-index:2; display:none;"/>
+
 </div>
 </body>
 <script type="text/javascript">
 $(function(){
 
+	var n=0;
+
+	function ifFinish(){
+		//alert(n);
+		if(n==7){
+			setTimeout(function(){
+				popTipShow.alert('好棒！','恭喜你找到了全部内容！<br/>更多内容请关注多巴胺医生工作室 -- 专业的医学插画工作室。', ['完成'],
+					function(e){
+					  //callback 处理按钮事件
+					  var button = $(e.target).attr('class');
+					  if(button == 'ok'){
+						//按下确定按钮执行的操作
+						//todo ....
+						this.hide();
+					  }
+					}
+				);
+			}, 1000);
+		}
+	}
+
 	$('#img1').on('click', function(){
-		webToast("这是一张内耳、外耳环境图，试着找出藏在里面的结构吧","middle",2000)
+		if(n==7){
+			ifFinish();
+		}else{
+			webToast("这是一张内耳、外耳环境图，试着找出藏在里面的结构吧","middle",1000);
+		}
 	});
 
 	$('#area_txg').on('click', function(){
 		$('#tingxiaogu').fadeIn();
+		n=n+1;
 		setTimeout(function(){
 			popTipShow.alert('听小骨',"恭喜你找到一块儿听小骨<br/><img src=\"img/tingxiaogu2.jpg\" style=\"width:100px;\" />听小骨由：锤骨、砧骨、镫骨组成（左->右）", ['继续找'],
+				function(e){
+					//callback 处理按钮事件
+					var button = $(e.target).attr('class');
+					if(button == 'ok'){
+						//按下确定按钮执行的操作
+						//todo ....
+						this.hide();
+						ifFinish();
+					}
+				}
+			);
+		}, 1000);
+   });
+   	$('#area_gbgg').on('click', function(){
+		$('#gubanguiguan').fadeIn();
+		n=n+1;
+		setTimeout(function(){
+			popTipShow.alert('骨半规管',"恭喜你找到骨半规管", ['继续找'],
 				function(e){
 				  //callback 处理按钮事件
 				  var button = $(e.target).attr('class');
@@ -53,11 +111,111 @@ $(function(){
 					//按下确定按钮执行的操作
 					//todo ....
 					this.hide();
+					ifFinish();
 				  }
 				}
 			);
 		}, 1000);
    });
+   	$('#area_ew').on('click', function(){
+		$('#erwo').fadeIn();
+		n=n+1;
+		setTimeout(function(){
+			popTipShow.alert('耳蜗',"恭喜你找到耳蜗<br/><img src=\"img/erwo2.jpg\" style=\"width:100px;\" />", ['继续找'],
+				function(e){
+				  //callback 处理按钮事件
+				  var button = $(e.target).attr('class');
+				  if(button == 'ok'){
+					//按下确定按钮执行的操作
+					//todo ....
+					this.hide();
+					ifFinish();
+				  }
+				}
+			);
+		}, 1000);
+   });
+   	$('#area_gm').on('click', function(){
+		$('#gumo').fadeIn();
+		n=n+1;
+		setTimeout(function(){
+			popTipShow.alert('鼓膜',"恭喜你找到鼓膜", ['继续找'],
+				function(e){
+				  //callback 处理按钮事件
+				  var button = $(e.target).attr('class');
+				  if(button == 'ok'){
+					//按下确定按钮执行的操作
+					//todo ....
+					this.hide();
+					ifFinish();
+				  }
+				}
+			);
+		}, 1000);
+   });
+   	$('#area_ed').on('click', function(){
+		$('#erdao').fadeIn();
+		n=n+1;
+		setTimeout(function(){
+			popTipShow.alert('耳道',"恭喜你找到耳道", ['继续找'],
+				function(e){
+				  //callback 处理按钮事件
+				  var button = $(e.target).attr('class');
+				  if(button == 'ok'){
+					//按下确定按钮执行的操作
+					//todo ....
+					this.hide();
+					ifFinish();
+				  }
+				}
+			);
+		}, 1000);
+   });
+   	$('#area_ek').on('click', function(){
+		$('#erkuo').fadeIn();
+		n=n+1;
+		setTimeout(function(){
+			popTipShow.alert('耳廓',"恭喜你找到耳廓", ['继续找'],
+				function(e){
+				  //callback 处理按钮事件
+				  var button = $(e.target).attr('class');
+				  if(button == 'ok'){
+					//按下确定按钮执行的操作
+					//todo ....
+					this.hide();
+					ifFinish();
+				  }
+				}
+			);
+		}, 1000);
+   });
+   	$('#area_dn').on('click', function(){
+		$('#danao').fadeIn();
+		n=n+1;
+		setTimeout(function(){
+			popTipShow.alert('大脑和听觉神经',"恭喜你找到大脑和听觉神经<br/>大海航行靠舵手！", ['继续找'],
+				function(e){
+				  //callback 处理按钮事件
+				  var button = $(e.target).attr('class');
+				  if(button == 'ok'){
+					//按下确定按钮执行的操作
+					//todo ....
+					this.hide();
+					ifFinish();
+				  }
+				}
+			);
+		}, 1000);
+   });
+
+
+
+
+
+
+
+
+
 
 
    $('#demo1').on('click', function(){
